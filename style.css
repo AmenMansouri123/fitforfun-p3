@@ -1,7 +1,7 @@
-/* GOOGLE FONT */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* RESET */
+
 
 *{
 margin:0;
@@ -10,7 +10,7 @@ box-sizing:border-box;
 font-family:'Poppins', sans-serif;
 }
 
-/* BODY */
+
 
 body{
 background:#f1f5f9;
@@ -19,7 +19,7 @@ line-height:1.6;
 min-height:100vh;
 }
 
-/* HEADER */
+
 
 header{
 display:flex;
@@ -39,7 +39,7 @@ font-weight:600;
 color:#22c55e;
 }
 
-/* NAVIGATION */
+
 
 nav a{
 color:#1e293b;
@@ -98,13 +98,13 @@ margin-top:30px;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
-/* SECTIONS */
+
 
 section{
 padding:80px 40px;
 }
 
-/* TITLES */
+
 
 h1{
 font-size:42px;
@@ -118,7 +118,7 @@ margin-bottom:20px;
 text-align:center;
 }
 
-/* INFO TEXT */
+
 
 .info{
 max-width:900px;
@@ -132,7 +132,7 @@ font-size:18px;
 color:#334155;
 }
 
-/* OPENINGSTIJDEN */
+
 
 .openingstijden{
 text-align:center;
@@ -148,7 +148,7 @@ font-size:18px;
 color:#334155;
 }
 
-/* CARDS */
+
 
 .cards{
 display:flex;
@@ -187,7 +187,7 @@ color:#475569;
 font-size:15px;
 }
 
-/* FORM */
+
 
 .form{
 max-width:500px;
@@ -225,7 +225,7 @@ form select:focus{
 outline:2px solid #22c55e;
 }
 
-/* BUTTON */
+
 
 button{
 padding:12px;
@@ -254,7 +254,7 @@ margin-top:60px;
 color:#334155;
 }
 
-/* RESPONSIVE */
+
 
 @media(max-width:900px){
 
