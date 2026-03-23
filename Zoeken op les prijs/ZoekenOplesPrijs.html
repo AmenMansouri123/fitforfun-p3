@@ -2,52 +2,57 @@
 <html lang="nl">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>FitForFun Sportschool</title>
+    <title>Zoeken op Les Prijs | FitForFun</title>
 
-    <link rel="stylesheet" href="style.s2.css">
-    <link rel="stylesheet" href="script.s2.js">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- Header met navigatie (zelfde als homepagina) -->
     <header>
-
         <h1 class="logo">FitForFun</h1>
-
         <nav>
-
             <a href="index.html">Home</a>
             <a href="aanbiedingen.html">Aanbiedingen</a>
             <a href="account.html">Accounts</a>
             <a href="trainers.html">Trainers</a>
             <a href="lessen.html">Lessen</a>
             <a href="reserveren.html">Reserveringen</a>
-            <a href="Zoeken op les prijs/ZoekenOplesPrijs.html">Zoeken op les prijs</a>
+            <a href="ZoekenOplesPrijs.html">Zoeken op les prijs</a>
+        </nav>
+    </header>
 
-            <div class="container">
-    <h1>Zoek lessen op prijs</h1>
+    <!-- Zoekformulier sectie -->
+    <section class="form">
+        <h1>Zoek lessen op prijs</h1>
+        <form action="search.php" method="GET" class="search-form">
+            <label for="min">Min prijs (€)</label>
+            <input type="number" name="min" id="min" required>
 
-    <!-- Zoek formulier voor lessen op prijs -->
-<form action="search.php" method="GET">
+            <label for="max">Max prijs (€)</label>
+            <input type="number" name="max" id="max" required>
 
-    <!-- Minimum prijs invoer -->
-    <input type="number" name="min" required>
+            <button type="submit">Zoeken</button>
 
-    <!-- Maximum prijs invoer -->
-    <input type="number" name="max" required>
-
-    <!-- Knop om zoekactie te starten -->
-    <button type="submit">Zoeken</button>
-
-</form>
-</div>
+            <!-- Foutmelding bij JS validatie -->
+            <p class="error" id="error"></p>
+        </form>
+    </section>
 
 </body>
 </html>
-
