@@ -1,0 +1,140 @@
+/* =========================
+   ALGEMEEN
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+header {
+    background: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+/* Navigatie */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Titel */
+.container h1 {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   FORMULIER
+========================= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input velden */
+input {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Focus effect */
+input:focus {
+    outline: none;
+    border: 1px solid #00d4ff;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #00d4ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+    background: #009ec3;
+    transform: scale(1.05);
+}
+
+/* =========================
+   RESULTATEN (voor later)
+========================= */
+.les {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Geen resultaten */
+.geen {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* =========================
+   RESPONSIVE (mobiel)
+========================= */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
