@@ -1,93 +1,93 @@
-// LOGIN FORM
+
 
 const loginForm = document.getElementById("loginForm");
 
-if(loginForm){
+if (loginForm) {
 
-loginForm.addEventListener("submit", function(e){
+    loginForm.addEventListener("submit", function (e) {
 
-e.preventDefault();
+        e.preventDefault();
 
-alert("Welkom terug bij FitForFun 💪");
+        alert("Welkom terug bij FitForFun ");
 
-});
+    });
 
 }
 
 
 
-// REGISTER FORM
+
 
 const registerForm = document.getElementById("registerForm");
 
-if(registerForm){
+if (registerForm) {
 
-registerForm.addEventListener("submit", function(e){
+    registerForm.addEventListener("submit", function (e) {
 
-e.preventDefault();
+        e.preventDefault();
 
-const message = document.getElementById("message");
+        const message = document.getElementById("message");
 
-message.innerHTML = "✅ Account aangemaakt! Check jouw email om je account te bevestigen.";
+        message.innerHTML = " Account aangemaakt! Check jouw email om je account te bevestigen.";
 
-message.style.color = "green";
+        message.style.color = "green";
 
-registerForm.reset();
+        registerForm.reset();
 
-});
+    });
 
 }
 
 
 
-// SWITCH NAAR REGISTER
+
 
 const showRegister = document.getElementById("showRegister");
 
-if(showRegister){
+if (showRegister) {
 
-showRegister.addEventListener("click", function(){
+    showRegister.addEventListener("click", function () {
 
-document.getElementById("loginBox").style.display = "none";
+        document.getElementById("loginBox").style.display = "none";
 
-document.getElementById("registerBox").style.display = "block";
+        document.getElementById("registerBox").style.display = "block";
 
-});
+    });
 
 }
 
 
 
-// TERUG NAAR LOGIN
+
 
 const backLogin = document.getElementById("backLogin");
 
-if(backLogin){
+if (backLogin) {
 
-backLogin.addEventListener("click", function(){
+    backLogin.addEventListener("click", function () {
 
-document.getElementById("registerBox").style.display = "none";
+        document.getElementById("registerBox").style.display = "none";
 
-document.getElementById("loginBox").style.display = "block";
+        document.getElementById("loginBox").style.display = "block";
 
-});
+    });
 
 }
 
 
 
-// RESERVERING FORM
+
 
 const reserveForm = document.querySelector("#reserveForm");
 
-if(reserveForm){
+if (reserveForm) {
 
-reserveForm.addEventListener("submit", function(e){
+    reserveForm.addEventListener("submit", function (e) {
 
-e.preventDefault();
+        e.preventDefault();
 
-alert("Je reservering is succesvol verstuurd!");
+        alert("Je reservering is succesvol verstuurd!");
 
-});
+    });
 
 }
