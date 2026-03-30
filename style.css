@@ -1,283 +1,300 @@
-/* GOOGLE FONT */
+/* =========================
+   FONTS & RESET
+========================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* RESET */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* BODY */
-
-body{
-background:#f1f5f9;
-color:#1e293b;
-line-height:1.6;
-min-height:100vh;
+/* =========================
+   BODY
+========================= */
+body {
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+    min-height: 100vh;
 }
 
-/* HEADER */
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:white;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-z-index:100;
+/* =========================
+   HEADER / NAVBAR
+========================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.logo{
-font-size:28px;
-font-weight:600;
-color:#22c55e;
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #22c55e;
 }
 
-/* NAVIGATION */
-
-nav a{
-color:#1e293b;
-text-decoration:none;
-margin-left:25px;
-font-size:16px;
-position:relative;
-transition:0.3s;
+nav a {
+    color: #1e293b;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
 }
 
-nav a:hover{
-color:#22c55e;
+nav a:hover {
+    color: #22c55e;
 }
 
-nav a::after{
-content:"";
-position:absolute;
-width:0%;
-height:2px;
-background:#22c55e;
-left:0;
-bottom:-5px;
-transition:0.3s;
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #22c55e;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
 }
 
-nav a:hover::after{
-width:100%;
+nav a:hover::after {
+    width: 100%;
 }
 
-/* HERO */
-
-.hero{
-text-align:center;
-padding:100px 20px;
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #d1fae5, #f0fdf4);
 }
 
-.hero h1{
-font-size:55px;
-margin-bottom:20px;
-color:#16a34a;
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #16a34a;
 }
 
-.hero p{
-max-width:750px;
-margin:auto;
-font-size:20px;
-margin-bottom:30px;
-color:#334155;
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #334155;
 }
 
-.hero img{
-width:85%;
-max-width:950px;
-border-radius:12px;
-margin-top:30px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+.hero .btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-/* SECTIONS */
-
-section{
-padding:80px 40px;
+.hero .btn:hover {
+    background: #16a34a;
+    transform: scale(1.05);
 }
 
-/* TITLES */
-
-h1{
-font-size:42px;
-margin-bottom:30px;
-text-align:center;
+/* =========================
+   SECTIONS
+========================= */
+section {
+    padding: 80px 40px;
 }
 
-h2{
-color:#16a34a;
-margin-bottom:20px;
-text-align:center;
+h1, h2 {
+    text-align: center;
 }
 
-/* INFO TEXT */
-
-.info{
-max-width:900px;
-margin:auto;
-text-align:center;
+h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
 }
 
-.info p{
-margin-bottom:15px;
-font-size:18px;
-color:#334155;
+h2 {
+    color: #16a34a;
+    margin-bottom: 20px;
 }
 
-/* OPENINGSTIJDEN */
-
-.openingstijden{
-text-align:center;
+/* =========================
+   CARDS (LESSEN / RESULTATEN)
+========================= */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.openingstijden ul{
-list-style:none;
+.card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
 }
 
-.openingstijden li{
-margin:10px;
-font-size:18px;
-color:#334155;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* CARDS */
-
-.cards{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:30px;
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.card{
-background:white;
-width:300px;
-padding:20px;
-border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,0.1);
-transition:0.3s;
+.card h3 {
+    color: #16a34a;
+    margin-bottom: 10px;
 }
 
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 40px rgba(0,0,0,0.15);
+.card p {
+    color: #475569;
+    font-size: 15px;
 }
 
-.card img{
-width:100%;
-border-radius:10px;
-margin-bottom:15px;
+/* =========================
+   FORMULIER / ZOEKPAGINA
+========================= */
+.form {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.card h3{
-color:#16a34a;
-margin-bottom:10px;
+.form h1 {
+    margin-bottom: 25px;
 }
 
-.card p{
-color:#475569;
-font-size:15px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-/* FORM */
-
-.form{
-max-width:500px;
-margin:auto;
-background:white;
-padding:40px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
-.form h1{
-margin-bottom:25px;
-}
-
-form{
-display:flex;
-flex-direction:column;
-}
-
-form label{
-margin-top:10px;
-margin-bottom:5px;
-}
-
-form input,
-form select{
-padding:12px;
-border:1px solid #cbd5e1;
-border-radius:6px;
-margin-bottom:10px;
+form input[type="number"],
+form select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 form input:focus,
-form select:focus{
-outline:2px solid #22c55e;
+form select:focus {
+    outline: 2px solid #22c55e;
 }
 
-/* BUTTON */
-
-button{
-padding:12px;
-border:none;
-border-radius:6px;
-background:#22c55e;
-color:white;
-font-size:16px;
-cursor:pointer;
-margin-top:10px;
-transition:0.3s;
+button, .btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #22c55e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
-button:hover{
-background:#16a34a;
-transform:scale(1.05);
+button:hover, .btn:hover {
+    background: #16a34a;
+    transform: scale(1.05);
 }
 
-/* FOOTER */
-
-footer{
-background:#e2e8f0;
-text-align:center;
-padding:25px;
-margin-top:60px;
-color:#334155;
+/* Foutmelding */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
-/* RESPONSIVE */
+/* =========================
+   OPENINGSTIJDEN / TABLES
+========================= */
+.openingstijden table {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+}
 
+.openingstijden th, .openingstijden td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: center;
+}
+
+.openingstijden th {
+    background: #22c55e;
+    color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #e2e8f0;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    color: #334155;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 @media(max-width:900px){
+    header{
+        flex-direction: column;
+        text-align:center;
+    }
 
-header{
-flex-direction:column;
-text-align:center;
-}
+    nav{
+        margin-top:15px;
+    }
 
-nav{
-margin-top:15px;
-}
+    .hero h1{
+        font-size:38px;
+    }
 
-.hero h1{
-font-size:38px;
-}
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
 
-.cards{
-flex-direction:column;
-align-items:center;
-}
+    .hero img{
+        width:95%;
+    }
 
-.hero img{
-width:95%;
-}
-
+    .form {
+        width: 90%;
+        margin: 40px auto;
+    }
 }
