@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8"> <!-- Zorgt dat tekst correct wordt weergegeven -->
+    <title>Inloggen | FitForFun</title>
+
+    <!-- Koppeling met CSS -->
+    <link rel="stylesheet" href="inloggen.css">
+
+    <!-- Koppeling met JavaScript -->
+    <script src="inloggen.js" defer></script>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER + NAVIGATIE
+========================= -->
+<header>
+    <h1 class="logo">FitForFun</h1>
+
+    <nav>
+        <!-- Navigatie naar andere pagina's -->
+        <a href="index.html">Home</a>
+        <a href="register.html">Nieuwe account</a>
+        <a href="ZoekenOplesPrijs.html">Zoeken op les prijs</a>
+        <a href="lessen.html">Lessen</a>
+    </nav>
+</header>
+
+<!-- =========================
+     LOGIN FORMULIER
+========================= -->
+<section class="form">
+
+    <h1>Inloggen</h1>
+
+    <!-- Form stuurt data naar login.php -->
+    <form action="login.php" method="POST">
+
+        <!-- E-mail invoer -->
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required>
+
+        <!-- Wachtwoord invoer -->
+        <label for="password">Wachtwoord</label>
+        <input type="password" name="password" id="password" required>
+
+        <!-- Submit knop -->
+        <button type="submit">Inloggen</button>
+
+        <!-- Foutmelding van JS -->
+        <p class="error" id="error"></p>
+
+    </form>
+
+</section>
+
+</body>
+</html>
